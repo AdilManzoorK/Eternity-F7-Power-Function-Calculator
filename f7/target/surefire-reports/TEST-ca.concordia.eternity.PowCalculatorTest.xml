@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ca.concordia.eternity.PowCalculatorTest" time="0.115" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7\target\test-classes;C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7\target\classes;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\adilm\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\adilm\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\adilm\AppData\Local\Temp\surefire7880141206431485414\surefirebooter-20250810145257592_3.jar C:\Users\adilm\AppData\Local\Temp\surefire7880141206431485414 2025-08-10T14-52-57_355-jvmRun1 surefire-20250810145257592_1tmp surefire_0-20250810145257592_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7\target\test-classes;C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7\target\classes;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\adilm\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\adilm\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\adilm"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-03-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\adilm\AppData\Local\Temp\surefire7880141206431485414\surefirebooter-20250810145257592_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22+36-2370"/>
+    <property name="user.name" value="adilm"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\adilm\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\adilm\AppData\Local\Temp\"/>
+    <property name="java.version" value="22"/>
+    <property name="user.dir" value="C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\opl\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\opl\oplide\;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\cplex\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\cpoptimizer\bin\x64_win64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\adilm\AppData\Local\Programs\Python\Python37;C:\Program Files\PuTTY\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Tools\apache-maven-3.9.11\bin;C:\Users\adilm\AppData\Local\Microsoft\WindowsApps;C:\Users\adilm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\adilm\AppData\Local\Programs\Python\Python37;C:\intelFPGA_pro\21.1\modelsim_ase\win32aloem;C:\Users\adilm\AppData\Local\GitHubDesktop\bin;C:\Users\adilm\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Tools\apache-maven-3.9.x\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22+36-2370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="twoPowFive_intExponent" classname="ca.concordia.eternity.PowCalculatorTest" time="0.011"/>
+  <testcase name="positiveRealExponent_seriesPath" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="zeroPowZero_throws" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="rangeGuard_throws" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="twoPowMinusThree_negativeIntExponent" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="negativeBase_integerExponent_ok" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="zeroPowPositive_isZero" classname="ca.concordia.eternity.PowCalculatorTest" time="0.002"/>
+  <testcase name="onePowBig_isOne" classname="ca.concordia.eternity.PowCalculatorTest" time="0.0"/>
+  <testcase name="nanGuard_throws" classname="ca.concordia.eternity.PowCalculatorTest" time="0.001"/>
+  <testcase name="negativeBase_nonIntegerExponent_throws" classname="ca.concordia.eternity.PowCalculatorTest" time="0.002"/>
+</testsuite>

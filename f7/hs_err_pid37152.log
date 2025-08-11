@@ -1,0 +1,236 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 4030464 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3631), pid=37152, tid=45280
+#
+# JRE version:  (22.0+36) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (22+36-2370, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5007 --module-path=C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar --add-modules=javafx.base,javafx.controls,javafx.graphics ca.concordia.eternity.F7App
+
+Host: AMD Ryzen 5 5500U with Radeon Graphics         , 12 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.4484)
+Time: Sun Aug 10 16:41:47 2025 Eastern Daylight Time elapsed time: 0.036374 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000028ca5451690):  JavaThread "Unknown thread" [_thread_in_vm, id=45280, stack(0x000000f536400000,0x000000f536500000) (1024K)]
+
+Stack: [0x000000f536400000,0x000000f536500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6e2349]  (no source info available)
+V  [jvm.dll+0x874ed3]  (no source info available)
+V  [jvm.dll+0x8772fe]  (no source info available)
+V  [jvm.dll+0x8779d3]  (no source info available)
+V  [jvm.dll+0x27fcb6]  (no source info available)
+V  [jvm.dll+0x6de9e5]  (no source info available)
+V  [jvm.dll+0x6d34ea]  (no source info available)
+V  [jvm.dll+0x35892a]  (no source info available)
+V  [jvm.dll+0x360e56]  (no source info available)
+V  [jvm.dll+0x3b3d93]  (no source info available)
+V  [jvm.dll+0x3b4028]  (no source info available)
+V  [jvm.dll+0x32c4ec]  (no source info available)
+V  [jvm.dll+0x32d0a8]  (no source info available)
+V  [jvm.dll+0x83cd9c]  (no source info available)
+V  [jvm.dll+0x3c0cc1]  (no source info available)
+V  [jvm.dll+0x825d8c]  (no source info available)
+V  [jvm.dll+0x45b9ee]  (no source info available)
+V  [jvm.dll+0x45d871]  (no source info available)
+C  [jli.dll+0x52a3]  (no source info available)
+C  [ucrtbase.dll+0x37b0]  (no source info available)
+C  [KERNEL32.DLL+0x2e8d7]  (no source info available)
+C  [ntdll.dll+0x3c34c]  (no source info available)
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fff5d94c1c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000028ca78a2cf0 WorkerThread "GC Thread#0"                     [id=21796, stack(0x000000f536500000,0x000000f536600000) (1024K)]
+  0x0000028ca78b41e0 ConcurrentGCThread "G1 Main Marker"            [id=32836, stack(0x000000f536600000,0x000000f536700000) (1024K)]
+  0x0000028ca78b6e70 WorkerThread "G1 Conc#0"                       [id=41884, stack(0x000000f536700000,0x000000f536800000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff5d09f2b7]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fff5d9cccc8] Heap_lock - owner thread: 0x0000028ca5451690
+
+Heap address: 0x000000070a800000, size: 3928 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total reserved 4022272K, committed 0K, used 0K [0x000000070a800000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fff5d49e4e9]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.026 Loaded shared library C:\Program Files\Java\jdk-22\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6e5c90000 - 0x00007ff6e5ca0000 	C:\Program Files\Java\jdk-22\bin\java.exe
+0x00007ff84f5e0000 - 0x00007ff84f848000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff84db20000 - 0x00007ff84dbe9000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff84ca10000 - 0x00007ff84cdfd000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff84d230000 - 0x00007ff84d37b000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff802f90000 - 0x00007ff802fa7000 	C:\Program Files\Java\jdk-22\bin\jli.dll
+0x00007ff838f90000 - 0x00007ff838fab000 	C:\Program Files\Java\jdk-22\bin\VCRUNTIME140.dll
+0x00007ff84ec10000 - 0x00007ff84ecc4000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff84dfb0000 - 0x00007ff84e059000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff84f4f0000 - 0x00007ff84f596000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff84eef0000 - 0x00007ff84f008000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff84d950000 - 0x00007ff84db1c000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff8379f0000 - 0x00007ff837c8a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4484_none_3e0e6d4ce32ef3b3\COMCTL32.dll
+0x00007ff84c7c0000 - 0x00007ff84c7e7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff84ee40000 - 0x00007ff84ee6b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff84ce00000 - 0x00007ff84cf37000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff84cf40000 - 0x00007ff84cfe3000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff845580000 - 0x00007ff84558b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff84f4b0000 - 0x00007ff84f4df000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8472f0000 - 0x00007ff8472fc000 	C:\Program Files\Java\jdk-22\bin\vcruntime140_1.dll
+0x00007fffffee0000 - 0x00007ffffff6e000 	C:\Program Files\Java\jdk-22\bin\msvcp140.dll
+0x00007fff5cd60000 - 0x00007fff5daa8000 	C:\Program Files\Java\jdk-22\bin\server\jvm.dll
+0x00007ff84e9b0000 - 0x00007ff84ea24000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff84c580000 - 0x00007ff84c5de000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff845540000 - 0x00007ff845575000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff84c560000 - 0x00007ff84c574000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff84b4d0000 - 0x00007ff84b4eb000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff8472b0000 - 0x00007ff8472ba000 	C:\Program Files\Java\jdk-22\bin\jimage.dll
+0x00007ff84a100000 - 0x00007ff84a341000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff84d4a0000 - 0x00007ff84d826000 	C:\WINDOWS\System32\combase.dll
+0x00007ff84d3b0000 - 0x00007ff84d490000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff8310f0000 - 0x00007ff831133000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff84c970000 - 0x00007ff84ca09000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff812f90000 - 0x00007ff812fcc000 	C:\Program Files\Java\jdk-22\bin\jdwp.dll
+0x00007ff838f20000 - 0x00007ff838f3e000 	C:\Program Files\Java\jdk-22\bin\java.dll
+0x00007ff84e200000 - 0x00007ff84e94a000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ff84c7f0000 - 0x00007ff84c964000 	C:\WINDOWS\System32\wintypes.dll
+0x00007ff84de00000 - 0x00007ff84df9e000 	C:\WINDOWS\System32\ole32.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4484_none_3e0e6d4ce32ef3b3;C:\Program Files\Java\jdk-22\bin\server
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5007 --module-path=C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5-win.jar;C:\Users\adilm\.m2\repository\org\openjfx\javafx-graphics\21.0.5\javafx-graphics-21.0.5.jar --add-modules=javafx.base,javafx.controls,javafx.graphics 
+java_command: ca.concordia.eternity.F7App
+java_class_path (initial): C:\Users\adilm\OneDrive\Desktop\Summer 2025\SOEN-D3\f7\target\classes
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 257949696                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4118806528                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4118806528                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\opl\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\opl\oplide\;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\cplex\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community2211\cpoptimizer\bin\x64_win64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\adilm\AppData\Local\Programs\Python\Python37;C:\Program Files\PuTTY\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Tools\apache-maven-3.9.11\bin;C:\Users\adilm\AppData\Local\Microsoft\WindowsApps;C:\Users\adilm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\adilm\AppData\Local\Programs\Python\Python37;C:\intelFPGA_pro\21.1\modelsim_ase\win32aloem;C:\Users\adilm\AppData\Local\GitHubDesktop\bin;C:\Users\adilm\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Tools\apache-maven-3.9.x\bin;
+USERNAME=adilm
+TERM=xterm
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
+TMP=C:\Users\adilm\AppData\Local\Temp
+TEMP=C:\Users\adilm\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.4484)
+OS uptime: 13 days 11:31 hours
+Hyper-V role detected
+
+CPU: total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 23 model 104 stepping 1 microcode 0x8608103, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for all 12 processors :
+  Max Mhz: 2100, Current Mhz: 2100, Mhz Limit: 2100
+
+Memory: 4k page, system-wide physical 15706M (1759M free)
+TotalPageFile size 29981M (AvailPageFile size 6M)
+current process WorkingSet (physical memory assigned to process): 14M, peak: 14M
+current process commit charge ("private bytes"): 311M, peak: 315M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (22+36-2370) for windows-amd64 JRE (22+36-2370), built on 2024-02-15T22:15:19Z by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.
